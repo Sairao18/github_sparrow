@@ -7,25 +7,24 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "download-chromedriver": "",
+    "test": "npx nightwatch",
+    "download-chromedriver": "npx chromedriver --detect-drivers --download",
     "prepare-nightwatch": "npm run download-chromedriver",
-    "nightwatch": "./node_modules/.bin/nightwatch"
+    "nightwatch": "npx nightwatch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/js-republic/github_sparrow.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Nightwatch", "UI Testing", "Selenium", "Chromedriver", "GitHub"],
+  "author": "Your Name",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/js-republic/github_sparrow/issues"
   },
   "homepage": "https://github.com/js-republic/github_sparrow#readme",
   "dependencies": {
-    "chromedriver": "^2.34.1",
-    "nightwatch": "^0.9.19",
-    "selenium-server": "^3.8.1"
+    "chromedriver": "^115.0.0",
+    "nightwatch": "^3.0.0"
   }
 }
